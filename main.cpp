@@ -55,8 +55,13 @@ int main(int argc, char** argv)
     }
 
     cv::imshow("img",origin);
-    cv::waitKey(0);
-
+    while(1)
+    {
+        if(cv::waitKey()==27)
+        {
+            break;
+        }
+    }
     // std::ifstream myFile;
     // myFile.open(argv[1]);
 
