@@ -16,13 +16,13 @@ $ ninja
 $ ./fast ../resoureces/${yourImage}
 ```
 
-# 3. Limits
+# 3. Limitations
 ## 1. Usage of OpenCV
 I wanted to make algorithm without open sources. But it is hard from loading images.  
 So, first of all, I made this with OpenCV in loading, preprocessing and accessing a image.  
 Next goal is to make this algorithm run without open sources.
 
-## 2. Diagonal Edge
+## 2. Diagonal Edges
 In this paper, it is introduced how to deal with diagonal edges. Because it is very important to treat these edges for detecting corners.  
 However, I haven't have idea to implement this into code yet.
 ![image](https://user-images.githubusercontent.com/58837749/185526399-c628f7d6-a112-4a33-9c72-49c2797b0393.png)  
@@ -35,7 +35,7 @@ However I haven't make this yet.
 I would keep developing it too.
 
 ## 4. Gaussian Blur
-I implement Gaussian Blur to remove texture corner like grass, leafs, bricks etc.  
+I implemented Gaussian Blur to remove texture corners like grass, leafs, bricks etc.  
 However I made it so simple, then details of filters(like no sigma) are weak.
 Neverthless, this greatly contributes to the improvement of performance.  
 
